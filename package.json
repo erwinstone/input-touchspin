@@ -1,0 +1,46 @@
+{
+	"name": "@erwinstone/input-touchspin",
+	"version": "1.0.0",
+	"description": "Javascript touch friendly input spinner",
+	"main": "dist/input-touchspin.js",
+	"types": "dist/input-touchspin.d.ts",
+	"module": "dist/input-touchspin.module.js",
+	"source": "src/input-touchspin.ts",
+	"repository": "https://github.com/erwinstone/input-touchspin.git",
+	"license": "MIT",
+	"author": "erwinstone",
+	"keywords": [
+		"touchspin",
+		"input touchspin",
+		"input spinner",
+		"input number"
+	],
+	"bugs": {
+		"url": "https://github.com/erwinstone/input-touchspin/issues"
+	},
+	"homepage": "https://input-touchspin.vercel.app/",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		"default": "./dist/input-touchspin.js",
+		"import": "./dist/input-touchspin.module.js",
+		"require": "./dist/input-touchspin.js"
+	},
+	"scripts": {
+		"build": "run-s build-*",
+		"build-js": "rollup -c",
+		"build-dts": "tsc src/input-touchspin.ts -d --emitDeclarationOnly --esModuleInterop --downlevelIteration --target esnext --outDir dist",
+		"build-dts-module": "shx cp dist/input-touchspin.d.ts dist/input-touchspin.module.d.ts",
+		"dev": "run-p dev-*",
+		"dev-js": "rollup -c -w"
+	},
+	"devDependencies": {
+		"esbuild": "0.14.9",
+		"npm-run-all": "4.1.5",
+		"rollup": "2.62.0",
+		"rollup-plugin-esbuild": "4.8.2",
+		"shx": "0.3.3",
+		"typescript": "4.5.4"
+	}
+}
