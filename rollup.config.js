@@ -11,7 +11,7 @@ const banner = `/*!
 */`
 
 // global variable name
-const name = 'BsToast'
+const name = 'InputTouchspin'
 
 export default defineConfig([
 	{
