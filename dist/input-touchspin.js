@@ -1,5 +1,5 @@
 /*!
-* @erwinstone/input-touchspin v1.0.0 (https://input-touchspin.vercel.app/)
+* @erwinstone/input-touchspin v1.0.2 (https://input-touchspin.vercel.app/)
 * Copyright 2021 erwinstone
 * Licensed under MIT (https://github.com/erwinstone/input-touchspin/blob/master/LICENSE)
 */
