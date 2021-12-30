@@ -20,7 +20,7 @@ npm install @erwinstone/input-touchspin
 Install from cdn:
 
 ```html
-<script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.0/dist/input-touchspin.min.js"></script>
+<script src="https://unpkg.com/@erwinstone/input-touchspin@1.0.1/dist/input-touchspin.min.js"></script>
 ```
 
 ##
