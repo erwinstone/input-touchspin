@@ -1,6 +1,6 @@
 {
 	"name": "@erwinstone/input-touchspin",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Javascript touch friendly input spinner",
 	"main": "dist/input-touchspin.js",
 	"types": "dist/input-touchspin.d.ts",
