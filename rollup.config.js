@@ -20,7 +20,7 @@ export default defineConfig([
 			{ banner, format: 'umd', file: pkg.main, name },
 			{ banner, format: 'es', file: pkg.module },
 		],
-		plugins: [esbuild()],
+		plugins: [esbuild({ target: 'esnext' })],
 	},
 	{
 		input: pkg.source,
@@ -28,6 +28,6 @@ export default defineConfig([
 			{ banner, format: 'umd', file: pkg.main.slice(0, -2) + 'min.js', name },
 			{ banner, format: 'es', file: pkg.module.slice(0, -2) + 'min.js' },
 		],
-		plugins: [esbuild({ minify: true })],
+		plugins: [esbuild({ target: 'esnext', minify: true })],
 	},
 ])
